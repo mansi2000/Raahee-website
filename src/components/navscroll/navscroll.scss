@@ -1,0 +1,45 @@
+.sticky {
+  position: sticky;
+  font-size: 1.4rem;
+  padding-top: 1.2rem;
+  top: 75px;
+  background-color: white;
+  margin: 20px auto 10px;
+  border-bottom: 1px solid #ccc;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 520px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 0.9rem;
+  }
+  &__tabs {
+    margin-top: 3px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #999;
+    background: #fcfcfc;
+    border: solid #ddd;
+    border-width: 1px 1px 0;
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 0;
+    bottom: auto;
+    @media screen and (min-width: 360px) and (max-width: 520px) {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+    @media screen and (max-width: 350px) {
+      padding-left: 0.2rem !important;
+      padding-right: 0.2rem !important;
+    }
+  }
+  .active {
+    line-height: 36px;
+    font-weight: bold;
+    color: #555;
+    background: white;
+    border-bottom: 4px solid #AA66CC;
+  }
+}

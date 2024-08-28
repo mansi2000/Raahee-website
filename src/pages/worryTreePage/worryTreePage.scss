@@ -1,0 +1,110 @@
+.worryTree {
+    background-color: #fff;
+
+    button {
+        text-transform: none;
+        box-shadow: none;
+    }
+
+    /*modal*/
+    .btn-primary {
+        background-color: #007bff;
+        border-color: white;
+        color: black;
+    }
+
+    .btn-primary i {
+        position: absolute;
+        padding-left: 94%;
+        margin-top: 7%;
+    }
+
+    .btn-primary:hover {
+        color: black;
+        border-color: white;
+    }
+
+    .modal-title {
+        text-align: center;
+    }
+
+    .modal-body {
+        font-size: 15px;
+    }
+
+    .modal-img {
+        width: 230px;
+        height: 300px;
+    }
+
+    .mark {
+        background-color: rgba(229, 196, 245, 0.568);
+    }
+
+    .mark2 {
+        background-color: rgba(191, 243, 202, 0.568);
+    }
+
+    .mark1 {
+        background-color: rgba(243, 242, 184, 0.568);
+    }
+
+    .mark3 {
+        background-color: rgba(243, 189, 189, 0.568);
+    }
+
+    .btn-secondary i {
+        padding-left: 5px;
+    }
+
+    .btn-secondary i:hover {
+        border-color: white;
+        color: rgba(160, 221, 211, 0.568);
+        transform: scale(1.1);
+    }
+
+    span {
+        font-weight: 600;
+    }
+
+    /* main section */
+    .tagline {
+        font-family: "Sacramento", cursive;
+    }
+
+    .display-4 {
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+
+    /*=================*/
+    .display-4.main-2 {
+        font-size: 1.3rem;
+    }
+
+    .card-img-top {
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        .display-4 {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .main-2 {
+            margin: 1.3rem;
+        }
+    }
+
+    .worry-tree-component {
+        min-height: 100vh;
+        padding-top: 6rem;
+    }
+}

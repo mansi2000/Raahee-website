@@ -1,0 +1,69 @@
+.modalWrapper{
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #FBF8F5;
+    z-index: 2;
+    top: 55%;
+    left: 50%;
+    transform: translate(-55%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
+    .close-div{
+        float: right;
+        .MuiButtonBase-root {
+            outline: none;
+        }
+    }
+}
+.keepInMindModal{
+    width: 594px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FBF8F5;
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    .pointers{
+        display: flex;
+        align-items: center;
+        margin: 1.1rem 0;
+    }
+    .pointerText{
+        display: inline-block;
+        width: 80%;
+        margin: 0 1rem;
+        font-size: 14px;
+    }
+    .bold{
+        font-weight: 600;
+    }
+    .terms{
+        width: 50%;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        color: #000000;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+    .standardColor{
+        color: #aa66cc;
+    }
+    .btnContinue{
+        background-color: #aa66cc;
+        color: white;
+        padding: 5px 14px 6px 14px;
+        border-radius: 26px;
+        border: none;
+        cursor: pointer;
+        width: 60%;
+        height: 44px;
+    }
+    .btnContinue:hover{
+        background-color: whitesmoke;
+        color: #aa66cc;
+        border: 2px solid #aa66cc;
+    }
+}

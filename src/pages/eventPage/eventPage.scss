@@ -1,0 +1,263 @@
+.EventPage {
+  max-width: 100%;
+  font-family: Poppins;
+  overflow-x: hidden;
+
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      -ms-flex: 0 0 33.3333% !important;
+      flex: 0 0 33.3333% !important;
+      max-width: 33.3333% !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .col-md-4 {
+      -ms-flex: 0 0 33.3333% !important;
+      flex: 0 0 33.3333% !important;
+      max-width: 33.3333% !important;
+    }
+  }
+  #scroll {
+    offset: 80px;
+  }
+  body {
+    background-color: rgb(251, 242, 244);
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    display: none;
+  }
+  .EventPage::-webkit-scrollbar {
+    display: none;
+  }
+
+  hr {
+    margin-left: 0;
+    height: 5px;
+    width: 150px;
+    margin-top: 0;
+    background-color: #aa66cc;
+    @media screen and (max-width: 768px) {
+      margin-left: 11rem;
+    }
+  }
+  .slick-dots li button:before {
+    color: blueviolet;
+    font-size: 10px;
+  }
+  .landing-text {
+    font-family: "Poppins";
+    font-weight: 450 !important;
+    font-size: 25px;
+    line-height: 60px;
+    letter-spacing: 20%;
+    //  left: 115px;
+    top: 195px;
+    border-radius: nullpx;
+  }
+  .tagline {
+    font-family: "Sacramento", cursive;
+  }
+
+  @media (min-width: 768px) and (max-width: 990px) {
+    .tagline {
+      margin-top: 2em;
+    }
+
+    .landing-text,
+    .display-4 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) and (min-width: 1300px) {
+    .home-landing {
+      height: 100vh;
+    }
+  }
+
+  .tagline {
+    margin-top: 0em;
+    text-align: left;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  .landing-text {
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    .buttons {
+      display: flex;
+      justify-content: center;
+    }
+    .display-4,
+    .landing-text {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+
+  .btn-secondary {
+    &:hover {
+      border-color: white;
+      color: rgba(160, 221, 211, 0.568);
+      transform: scale(1.1);
+    }
+    width: 274px;
+  }
+  i {
+    position: absolute;
+    top: 5px;
+    font-size: 30px;
+    color: black;
+    left: 8px;
+  }
+  .btn-outline-white {
+    position: relative;
+    background: darkmagenta;
+    width: 10%;
+    position: relative;
+    height: 40px;
+  }
+
+  .img-fluid {
+    margin-left: 2rem;
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+
+  .give-mask {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+  }
+  .give-mask2 {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+  }
+  .display-4 {
+    font-size: 3rem;
+  }
+  .whit {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .btn {
+    color: #fff;
+  }
+  .display-4 {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    .display-4 {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .h3-responsive {
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .checked {
+    color: grey;
+  }
+  .testimonials {
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+  }
+
+  .testimonial-inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+
+  .border {
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+  }
+
+  .testimonial {
+    background: #fff;
+    padding: 30px;
+  }
+
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width: 960px) {
+    .col {
+      flex: 100%;
+      max-width: 80%;
+    }
+  }
+  .active {
+    box-shadow: rgb(10, 10, 10);
+  }
+  .carousel .carousel-indicators li {
+    background-color: purple;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 400px) {
+    .side,
+    .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    hr {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    hr {
+      margin-left: 100px;
+      margin-right: 0px;
+    }
+  }
+}

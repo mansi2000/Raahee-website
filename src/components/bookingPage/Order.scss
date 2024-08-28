@@ -1,0 +1,30 @@
+.order {
+    width: 100%;
+    .order__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            margin: 0;
+        }
+    }
+    .discount {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h6 {
+            color: #39B150;
+        }
+    }
+    .order__row.discount {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .order__pay {
+        background-color: #a6c;
+        width: 100%;
+    }
+}

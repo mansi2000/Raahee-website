@@ -1,0 +1,151 @@
+.tansaction__status{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      @media screen and (max-width: 800px){
+         padding: 20px;
+      }
+      .payment__img {
+         height: 150px;
+         width: 150px;
+         display: flex;
+         margin-top: 180px;
+      }
+
+      .title__payment{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-top: 30px;
+         span{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            color: #383838;
+            @media screen and (max-width: 550px){
+                  font-size: 20px;
+
+            }
+            @media screen and (max-width: 290px){
+               font-size: 15px;
+            }
+         }
+         p{
+            margin-bottom: 0rem;
+            align-items: center;
+            font-size: 20px;
+            color: #383838;
+            text-align: center;
+            @media screen and (max-width: 550px){
+               font-size: 16px;
+            }
+            @media screen and (max-width: 290px){
+               font-size: 10px;
+            }
+         }
+      }
+
+      .booked__therapist{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         width: 70%;
+         margin-bottom: 50px;
+      .doctors__profile{
+         display: flex;
+         justify-content: flex-start;
+         flex-direction: row;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 50px;
+         margin: 60px 0;
+         @media screen and (max-width: 800px){
+            justify-content: center;
+         }
+         img{
+            border-radius: 100%;;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+         }
+      }
+      .doctors__name{
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         span{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: #383838;
+         }
+         p{
+            color: #4F4E4E;
+            font-size: 16px;
+            line-height: 20px;
+         }
+         .appointment__DD{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+         }
+         .appointment__slot{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            
+            .duration{
+               align-items: center;
+               height: 5px;
+               width: 5px;
+               background-color: #727272;
+               border-radius: 50%;
+               margin: 7px 7px 0px 7px;
+            }
+         } 
+      }
+
+      .invoice__generate{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-items: center;
+         justify-content: center;
+         align-items: center;
+         img{
+            width: 70px;
+            height: 70px;
+         }
+         p{
+            margin-left: 5px;
+         }
+         .invoice__button1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #AA66CC;
+            gap: 15px;
+            margin-top: 30px;
+            border-radius: 25px;
+         }
+         .invoice__button2{
+            color: #AA66CC !important;
+            border: 1px solid #AA66CC;
+            border-radius: 25px;
+         }
+      }
+      @media screen and (max-width: 1050px){
+         display: flex;
+         flex-wrap: wrap;
+         margin-bottom: 30px;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+      }
+   }
+}

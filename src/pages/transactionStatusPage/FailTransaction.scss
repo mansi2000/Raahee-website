@@ -1,0 +1,59 @@
+.failed__transaction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 20px;
+  .payment__image {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin-top: 100px;
+  }
+
+  .title__payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    span{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      color: #383838;
+      @media screen and (max-width: 550px){
+        font-size: 20px;
+
+      }
+      @media screen and (max-width: 290px){
+        font-size: 15px;
+      }
+    }
+    p{
+      margin-bottom: 0rem;
+      align-items: center;
+      font-size: 18px;
+      color: #383838;
+      text-align: center;
+      @media screen and (max-width: 550px){
+          font-size: 16px;
+      }
+      @media screen and (max-width: 290px){
+          font-size: 10px;
+      }
+    }
+  }
+
+  .support__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #AA66CC;
+    gap: 15px;
+    margin-top: 30px;
+    border-radius: 25px;
+  }
+}

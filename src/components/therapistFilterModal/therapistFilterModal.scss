@@ -1,0 +1,81 @@
+.modal-open .modal {
+/* scrollbar width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* scrollbar track */
+  &::-webkit-scrollbar-track {
+    background: #eee;
+  }
+
+  /* scrollbar handle */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #00d2ff;
+    background-image: linear-gradient(to top, #cccaca 0%, #9b9a9a 100%);
+  }
+}
+.modal-content{
+  height: 95vh;
+}
+.modal-body{
+  overflow-y: scroll;
+}
+.form-check {
+  display: flex !important;
+  align-items: center;
+}
+modal
+.rc-slider {
+  margin-right: 1rem;
+}
+.btn-primary {
+  background-color: #aa66cc !important;
+  border-color: #aa66cc !important;
+}
+.rc-slider-handle {
+  border-color: #c688e6 !important;
+}
+.rc-slider-track {
+  background-color: #c688e6 !important;
+}
+.btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+  background-color: #aa66cc !important;
+}
+.btn-primary.focus, .btn-primary:focus{
+  box-shadow: none !important;
+}
+.rc-slider-handle:active{
+  box-shadow: none !important;
+}
+.search-form {
+  align-items: center;
+  .form-control {
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #aa66cc !important;
+}
+.rc-slider-handle-dragging {
+  box-shadow: none !important;
+}
+.filter-button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.therapistFilter__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

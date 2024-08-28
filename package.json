@@ -1,0 +1,119 @@
+{
+  "name": "raahee-react",
+  "homepage": "/",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "https://raahee-server.eastus.cloudapp.azure.com",
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^29.2.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.8.1",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@syncfusion/ej2-base": "^19.4.52",
+    "@syncfusion/ej2-react-calendars": "^19.1.66",
+    "@syncfusion/ej2-react-popups": "^19.4.53",
+    "@trendyol-js/react-carousel": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.8.0",
+    "@typescript-eslint/parser": "^4.8.0",
+    "axios": "^0.24.0",
+    "babel-register": "^6.26.0",
+    "classnames": "^2.3.1",
+    "crypto-js": "^4.0.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "firebase": "^8.0.2",
+    "husky": "^4.3.0",
+    "lodash": "^4.17.21",
+    "lottie-web": "^5.7.13",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.29.1",
+    "notistack": "^1.0.2",
+    "rc-slider": "^9.7.4",
+    "react": "^17.0.1",
+    "react-alice-carousel": "^2.5.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-html-parser": "^2.0.2",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-router-sitemap": "^1.2.0",
+    "react-scripts": "^4.0.3",
+    "react-scroll": "^1.8.4",
+    "react-slick": "^0.28.1",
+    "react-whatsapp-widget": "^2.2.0",
+    "reactstrap": "^8.9.0",
+    "redux": "^4.0.5",
+    "rich-markdown-editor": "^11.1.0",
+    "sass": "^1.59.3",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.0",
+    "typescript": "^4.0.5",
+    "uuid": "^8.3.2",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "startup": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts --max_old_space_size=4096 start",
+    "build": "react-scripts --max_old_space_size=4096 build",
+    "test": "react-scripts test",
+    "pretest": "eslint src/.js src//.js src/*/.jsx",
+    "sitemap": "babel-node ./sitemap-builder.js"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pretest -- --fix --no-error-on-unmatched-pattern && git add . "
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.0",
+    "@typescript-eslint/parser": "^4.8.0",
+    "babel-cli": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.0",
+    "typescript": "^4.0.5"
+  }
+}

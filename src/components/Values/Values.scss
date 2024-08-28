@@ -1,0 +1,121 @@
+.values{
+    margin: -200px auto 121px;
+    max-width: 37.5rem;
+    padding: 0 5rem;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+        margin: -150px auto 121px;
+    }
+
+    .dots {
+        bottom:30px;
+        left: -180px;
+        position: absolute;
+        width: 160%;
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .heading {
+        color: #040222;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        margin: 0 auto 30px;
+    }
+
+    .contentWrapper {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.22);
+        margin-top: 44px;
+        width: max-content;
+        position: relative;
+        right: 180px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            right: 0;
+        }
+
+        ul {
+            border-radius: 8px;
+            padding: 42px 44px 5px 90px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            list-style: none;
+
+            li {
+                padding: 23px 0;
+                text-align: left;
+                position: relative;
+                width: 100%;
+                border-top: 1px solid rgba(93,33,210,.12);
+
+                h4 {
+                    font-size: 25px;
+                    line-height: 28px;
+                    font-weight: 500;
+                }
+
+                p {
+                    line-height: 24px;
+                    color: #434159;
+                    font-size: 20px;
+                }
+
+                &:nth-child(1) {
+                    border-top: none;
+                }
+
+                &::before {
+                    background-image: url("../../assets/spiral.png");
+                    background-repeat: no-repeat;
+                    content: '';
+                    display: block;
+                    background-size: cover;
+                    height: 1.25rem;
+                    position: absolute;
+                    top: 28px;
+                    left: -44px;
+                    width: 1.3125rem;
+                }
+            }
+        }
+
+        .shadowed {
+            box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.05), 0 2px 2px 0 rgba(0, 0, 0, 0.05), 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 8px 8px 0 rgba(0, 0, 0, 0.05), 0 16px 16px 0 rgba(0, 0, 0, 0.05);
+            position: absolute;
+            border-radius: 8px;
+            top: 0.25rem;
+            bottom: 0.25rem;
+            left: 0.5rem;
+            right: 0.5rem;
+        }
+    }
+
+    h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        // font-family: Sacremento;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+        width:50rem;
+    }
+
+    .value-head{
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+    .value-para{
+        font-family: 'Poppins', sans-serif !important;
+    }
+}

@@ -1,0 +1,298 @@
+.story {
+    margin-top: -200px;
+    padding: 0 64px;
+
+    .contentWrapper {
+        max-width: 980px;
+        margin: 0 auto 74px;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 38px;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 44px;
+            font-family: 'Poppins', sans-serif;
+
+
+            @media screen and (max-width: 600px) {
+                margin-bottom: 32px;
+            }
+        }
+
+        .steps {
+            background: url("../../assets/timelineBar.svg") no-repeat top;
+            height: 1000px;
+
+            @media screen and (max-width: 870px) {
+                    background: url("../../assets//timelineBarResponsive.svg") no-repeat 0 0;
+                    height: 1690px;
+                    padding-top: 41px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+
+            .step {
+                display: flex;
+                align-items: center;
+                width: 390px;
+
+                &:first-child {
+                    margin-top: 42px;
+
+                    .illus {
+                        top: 24px;
+                        left: 17px;
+                    }
+                }
+
+                &:nth-child(odd) {
+                    float: right;
+                }
+
+                &:nth-child(2) {
+                    margin-top: 171px;
+
+                    .illus {
+                        top: 6px;
+                        left: 4px;
+                    }
+                }                
+
+                &:nth-child(3) {
+                    margin-top: 130px;
+
+                    .illus {
+                        top: 24px;
+                        left: 26px;
+                    }
+                }                
+
+                &:nth-child(4) {
+                    margin-top: 130px;
+
+                    .illus {
+                        top: 7px;
+                        left: 14px;
+                    }
+                }                
+                
+                &:nth-child(5) {
+                    margin-top: 130px;
+
+                    .illus {
+                        top: -3px;
+                        left: 14px;
+                    }
+                }                
+                
+                &:nth-child(6) {
+                    margin-top: 130px;
+
+                    .illus {
+                        top: 27px;
+                        left: 10px;
+                    }
+                }                
+                
+                &:last-child {
+                    margin-top: 130px;
+
+                    .illus {
+                        top: 16px;
+                        left: 10px;
+                    }
+                }                
+
+
+                &:nth-child(2n) {
+                    float: left;
+                    justify-content: flex-end;
+
+                    .image {
+                        order: 1;
+                    }
+                }
+               
+                h4 {
+                    color: #040222;
+                    font-size: 20px;
+                    line-height: 28px;
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 16px;
+                    }
+                }
+
+                p { 
+                    color: #434159;
+                    font-size: 16px;
+                }
+
+                @media screen and (max-width: 930px) {
+                    width: 320px;
+                }
+
+                @media screen and (max-width: 1020px) {
+                    width: 350px;
+                }
+
+                @media screen and (max-width: 870px) {
+                    align-items: center;
+                    position: absolute;
+                    left: 70px;
+                    width: auto;
+                    margin: 0;
+
+                    &:first-child {
+                        top: 0;
+                    }
+
+                    &:nth-child(odd) {
+                        float: right;
+                    }
+
+                    &:nth-child(2n) {
+                        float: none;
+
+                        .image {
+                            order: 0;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        top: 112px;
+                    }                
+
+                    &:nth-child(3) {
+                        top: 395px;
+                    }                
+
+                    &:nth-child(4) {
+                        top: 635px;
+                    }                
+                    
+                    &:nth-child(5) {
+                        top: 880px;
+                    }                
+                    
+                    &:nth-child(6) {
+                        top: 1115px;
+                    }                
+                    
+                    &:last-child {
+                        top: 1374px;
+                    }                
+
+                }
+
+                @media screen and (max-width: 450px) {
+                        top: 56px;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        &:first-child {
+                            top: -30px;
+                            
+                            .illus {
+                                width: 90%;
+                                top: 1px;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            top: 90px;
+                        }                
+
+                        &:nth-child(3) {
+                            top: 370px;
+
+                            .illus {
+                                width: 75%;
+                                top: 6px;
+                                left: 16px;
+                            }
+                        }                
+
+                        &:nth-child(4) {
+                            top: 600px;
+
+                            .illus {
+                                width: 90%;
+                                left: 4px;
+                            }
+                        }                
+                        
+                        &:nth-child(5) {
+                            top:  850px;
+
+                            .illus {
+                                width: 90%;
+                                left: 4px;
+                            }
+                        }                
+                        
+                        &:nth-child(6) {
+                            top: 1088px;
+
+                            .illus {
+                                left: 0;
+                                top: 12px;
+                            }
+                        }                
+                        
+                        &:last-child {
+                            top: 1335px;
+
+                            .illus {
+                                left: 0;
+                                top: 1px;
+                            }
+                        }
+                    }
+
+                p {
+                    line-height: 24px;
+
+                    @media screen and (max-width: 870px) {
+                        line-height: 22px;
+                    }
+                }
+
+                .image {
+                    position: relative;
+
+                    @media screen and (max-width: 870px) {
+                        margin: 0 20px 0 0;
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        margin-bottom: 16px;
+                    }
+
+                    .circle {
+                        width: 128px;
+                        height: 128px;
+                        border-radius: 50%;
+                        background: linear-gradient(270deg, transparent, rgba(93,33,210,.03));
+
+                        @media screen and (max-width: 450px) {
+                            width: 96px;
+                            height: 96px;
+                        }
+
+                    }
+
+                    .illus {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        .content{
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.uploadImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 30rem;
+  //   max-height: 50rem;
+}
+.marginup{
+  margin-top: 2rem!important;
+  padding-left: 0.6rem;
+  padding-bottom: 1.1rem;
+}
+.commnt{
+  position:absolute; 
+  right:0;
+  .commnt-button{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding-left: 0em;
+    padding-right: 1rem;
+    background-color: transparent;
+    font-size: 1.0rem;
+    @media screen and (max-width:450px) {
+      font-size: 0.8rem;
+    }
+  }
+
+}
+.backCol{
+  background-color : #fff;
+}
+.bodyList{
+  // border: solid;
+  margin:4px, 4px; 
+  padding:4px; 
+  height: 150px; 
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  text-align:justify; 
+}
+.float-container {
+    border: 3px solid #fff;
+  
+}
+
+.float-child-1{
+    width: 5rem;
+    height: 3.5rem;
+    float: left;
+    padding: 0px;
+}  
+.float-child-2{
+    width: 90%;
+    
+}  
+.btnspcl {
+  border: none;
+  background-color: #fff;
+}
+.btnspcl:hover{
+  outline: none;
+}
+.comment-button{
+  padding-left: 0.7rem;
+  border:none;
+  outline:none;
+  background-color: transparent;
+  box-shadow: none;
+
+  &-text{
+    @media screen and (max-width:450px) {
+      display: none;
+    }
+  }
+}
+.cmt{
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #fff;
+}

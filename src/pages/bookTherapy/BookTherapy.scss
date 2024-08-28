@@ -1,0 +1,17 @@
+.booktherapy__form {
+  margin-top: 100px;
+  height: 2800px;
+  width: 100%;
+}
+
+@media (max-width: 541px) {
+  .booktherapy__form {
+    height: 2950px;
+  }
+}
+
+@media (max-width: 361px) {
+  .booktherapy__form {
+    height: 3300px;
+  }
+}

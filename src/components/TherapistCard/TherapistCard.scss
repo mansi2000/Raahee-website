@@ -1,0 +1,138 @@
+.TherapistCard {
+  font-family: Poppins;
+  cursor: pointer;
+  &:hover {
+    .speciality {
+      opacity: 1;
+      height: auto;
+      transition: all 0.5s ease-in;
+    }
+    .text {
+      display: block;
+      max-width: 200px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin: 0.1rem;
+      line-height: 1.2;
+    }
+    .MuiAvatar-img {
+      margin: 0;
+    }
+  }
+ @media only screen and (max-width: '992px'){
+  .speciality {
+    height: auto;
+    opacity: 1;
+  }
+ }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    background-color: #aa66cc;
+    width: 116%;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+  }
+  
+  .card-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  @media only screen and (min-width: '992px'){
+    .speciality {
+      height: 0rem;
+      opacity: 0;
+    }
+   }
+
+  .card {
+    background: #fff;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    height: 420px;
+    width: 300px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card:hover {
+      box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+      transform: translate3d(0px, -1px, 0px);
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+
+  .card-body .MuiAvatar-root.MuiAvatar-circular {
+    width: 170px;
+    height: 170px;
+    margin-bottom: auto;
+  }
+
+  .MuiAvatar-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 20rem;
+  }
+
+  .card-body .therapist__gender {
+    font-size: 12px;
+  }
+
+  .card-body .therapist__fees {
+    font-size: 12px;
+  }
+
+  .card-body > div > span {
+    display: inline-flex;
+    display: -webkit-inline-box;
+  }
+
+  .card-body > div > span > span {
+    font-size: 14px !important;
+    margin: 1px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #e7c4f8;
+    color: #9f3ad1;
+  }
+  @media only screen and (max-width: '992px'){
+    .card-body > div > span > span {
+      padding: 2px;
+    }
+  }
+
+  .btn-therapy {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 2.5;
+    display: inline-block;
+    font-weight: 400;
+    color: #ebd4f7 !important;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    color: inherit;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  .link {
+      color: #000;
+  }
+  .link:hover {
+      color: #000;
+  }
+}

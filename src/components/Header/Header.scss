@@ -1,0 +1,86 @@
+.Header{
+    font-family: 'Poppins', sans-serif;
+
+    .dropdown-item {
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        padding: 0.25rem 1.5rem !important;
+        color: #212529 !important;
+    }
+}
+.bg-light {
+    background-color: #fff !important;
+}
+.navbar {
+    box-shadow: none;
+    background-color: rgb(251, 242, 244);
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    hr {
+        margin-top: -11px;
+        margin-left: 70px;
+        height: 10px;
+        width: 70px;
+        border: none;
+        background-color: #aa66cc;
+    }
+}
+
+.nav-link {
+    color: #000 !important;
+}
+
+.navsize {
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#profile-pic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+    .navsize:hover {
+        border-bottom: 2px solid #AA66CC;
+    }
+
+    .navsize {
+        border-bottom: 2px solid transparent;
+    }
+
+    .vertical {
+        border-left: 3px solid #000;
+        height: 35px; 
+    }
+
+    .navbar-nav {
+        margin-left: 17rem;
+    }
+
+    .selected {
+        border-bottom: 3px solid #AA66CC !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}

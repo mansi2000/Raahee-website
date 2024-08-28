@@ -1,0 +1,131 @@
+$buttonsColor: #a6c;
+
+.calendar{
+    padding: 1rem 0 1rem 0;
+    width: 400px;
+    .headingTitles{
+        margin: 2rem 0;
+    }
+    .heading{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: center;
+        color: #aa66cc;
+        margin-bottom: 1rem;
+        .buttons{
+            width: 50%;
+            background: none;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 12px;
+            outline: 0;
+            padding: 10px;
+            p{
+                margin: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #aa66cc;
+                font-size: 10px;
+            }
+        }
+        .activeButton{
+            border-bottom-color: $buttonsColor;
+        }
+    }
+    .grayText{
+        color: #908A8A;
+        font-size: 12px;
+    }
+    .buttons:hover{
+        border-bottom:2px solid $buttonsColor;
+    }
+    .slots{
+        margin: 1rem;
+    }
+    .timings{
+        font-size: 14px;
+        display: none;
+        .partsOfDay{
+            .timeSlots{
+                font-size: 12px;
+                margin: 0.4rem 0.3rem;
+                background-color: transparent;
+                padding: 0.2rem 1rem;
+                border-radius: 6px;
+            }
+            .therapy {
+                border: 1px solid #8862B3;
+                color: #8862B3;
+            }
+            .consult {
+                border: 1px solid #FA8A8A;
+                color: #FA8A8A;
+            }
+            .booked{
+                background: #A14EB61A;
+            }
+            .timeSlots.therapy:hover{
+                background-color: $buttonsColor;
+                color: white;
+            }
+            .timeSlots.consult:hover{
+                background-color: #FA8A8A;
+                color: white;
+            }
+            .selectedSlot.therapy {
+                background-color: $buttonsColor;
+                color: white;
+            }
+            .selectedSlot.consult {
+                background-color: #FA8A8A;
+                color: white;
+            }
+        }
+    }
+
+    .active-content{
+        display: block;
+    }
+    .MuiCircularProgress-root {
+        height: 12px !important;
+        width: 12px !important;
+        margin-left: 10px;
+    }
+}
+
+.e-calendar .e-content .special span, .e-bigger.e-small .e-calendar .e-content .special span {
+    color: #ffffff !important;
+}
+
+.e-calendar .e-content td:hover span.e-day, .e-calendar .e-content td:focus span.e-day, .e-bigger.e-small .e-calendar .e-content td:hover span.e-day, .e-bigger.e-small .e-calendar .e-content td:focus span.e-day {
+    background-color: #aa66cc !important;
+    border-radius: 100% !important;
+}
+
+.e-calendar .e-content td.e-today.e-selected:hover span.e-day, .e-calendar .e-content td.e-selected:hover span.e-day, .e-calendar .e-content td.e-selected.e-focused-date span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-today.e-selected:hover span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-selected:hover span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-selected.e-focused-date span.e-day {
+    background-color: #aa66cc !important;
+    border: 1px solid #8862B3;
+}
+
+.e-calendar .e-btn.e-today.e-flat.e-primary, .e-calendar .e-css.e-btn.e-today.e-flat.e-primary {
+    background-color: #aa66cc !important;
+    border-color: #8862B3 !important;
+}
+
+.e-calendar .e-content td.e-today span.e-day, .e-calendar .e-content td.e-focused-date.e-today span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-today span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-focused-date.e-today span.e-day {
+    border: 2px solid #8862B3 !important;
+}
+.e-input-group input.e-input, .e-input-group.e-control-wrapper input.e-input {
+    height: 30px;
+    padding: 3px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #aa66cc;
+    font-family: 'Poppins';
+}
+.e-input-group .e-input-group-icon:last-child, .e-input-group.e-control-wrapper .e-input-group-icon:last-child {
+    font-size: 14px;
+    background-color: white;
+    color: #aa66cc;
+}

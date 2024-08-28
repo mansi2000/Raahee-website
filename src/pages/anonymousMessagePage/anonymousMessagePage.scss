@@ -1,0 +1,61 @@
+.anonymousMessagePage {
+
+    background-color: white;
+    min-height: 100vh;
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: white;
+        color: black;
+    }
+
+    .btn-primary i {
+        position: absolute;
+        padding-left: 94%;
+        margin-top: 7%;
+    }
+
+    .btn-primary:hover {
+        color: black;
+        border-color: white;
+    }
+
+    .btn-secondary i {
+        padding-left: 5px;
+    }
+
+    .btn-secondary i:hover {
+        border-color: white;
+        color: rgba(160, 221, 211, 0.568);
+        transform: scale(1.1);
+    }
+
+    .modal-title {
+        text-align: center;
+    }
+
+    .modal-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    mark {
+        background-color: rgba(229, 196, 245, 0.568);
+    }
+
+    .mark2 {
+        background-color: rgba(191, 243, 202, 0.568);
+    }
+
+    .mark1 {
+        background-color: rgba(243, 242, 184, 0.568);
+    }
+
+    .mark3 {
+        background-color: rgba(243, 189, 189, 0.568);
+    }
+
+    span {
+        font-weight: 600;
+    }
+}

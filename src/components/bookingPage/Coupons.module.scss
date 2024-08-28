@@ -1,0 +1,15 @@
+// @import 'styles/variables';
+
+.coupon1{
+    .welcome20{
+        position: relative;
+        z-index:0;
+    }
+
+    .text{
+        z-index: 1;
+        position: absolute;
+        width: 124px;
+        height: 24px;
+    }
+}

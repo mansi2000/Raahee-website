@@ -1,0 +1,104 @@
+section {
+    position: relative;
+    .heroGradient {
+        height: 517px;
+        top: -180px;
+        margin-bottom: 100px;
+        transform: skewY(10.2deg);
+        background-image: radial-gradient(circle at 30% 45%,#fff,#f7f5f9);
+        font-family: 'Poppins', sans-serif;
+
+        .light {
+            transform: rotate(0deg) rotate(180deg);
+            bottom: -10px;
+        }
+
+        .dark {
+            transform: rotate(2.5deg) rotate(180deg);
+            bottom: -22px;
+        }
+    }
+
+    ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 12px 0;
+
+        li {
+            padding: 0 12px;
+            .link {
+                color: #434159;
+                font-size: 20px;
+                font-weight: 500;
+                transition: color .2s ease-in-out;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #5d21d2;
+                }
+            }
+        }
+    }
+
+    .navLinks {
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        margin-left: -160px;
+        z-index: 2;
+    }
+
+    .heading {
+        position: absolute;
+        text-align: center;
+        top: 150px;
+        left: 50%;
+        margin-left: -205px;
+
+        @media only screen and (max-width: 600px) {
+            margin-left: -154px;
+        }
+
+        h1 {   
+        color: #040222;
+        font-weight: 500;
+        font-size: 4rem;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+    
+.gradientContainer {
+    position: relative;
+    width: 100%;
+
+    .light {
+        opacity: 0.88;
+    }
+
+    .dark {
+        opacity: 0.6;
+    }
+
+    .line {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-image: linear-gradient(217deg,#fff 30%,#5a00d3);
+    }
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}

@@ -1,0 +1,81 @@
+.therapyTerms{
+display: flex;
+flex-direction: column;
+width: 100%;
+justify-content: center;
+margin-top: 8rem;
+ &-header{
+    &-topic{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: grey;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    &-subheading{
+        letter-spacing: 1px;
+        color: black;
+        text-transform: uppercase;
+    }
+    &-side{
+        display:flex;
+        flex-direction: row;
+        &-image{
+            width:80%;
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+            svg{
+                width:75%;
+                height:100%;
+                padding-left: 15%;
+            }
+        }
+        &-toggle a button{
+            background: transparent;
+        }
+    }
+ }
+ 
+ &-links{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid grey;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 1%;
+    .TermLinks{
+        width: 100%;
+        text-align: center;
+        .active{
+            background: rgba(173, 171, 172, 0.212);
+        }
+        button{
+            width: 100%;
+            outline: none;
+            border: none;
+            padding:2% 0;
+            background: none;
+            letter-spacing: 0.6px;
+            font-weight: 400;
+            &:hover{
+                background: rgba(196, 195, 195, 0.5);
+            }
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+    }
+ }
+}
+.therapyMain-content{
+    margin-top: 1.3rem;
+    margin-bottom: 7rem;
+    ul li{
+        list-style-type: disc;
+    }
+    ol li{
+        list-style-type: decimal;
+    }
+}

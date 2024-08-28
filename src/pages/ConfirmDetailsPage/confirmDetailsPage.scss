@@ -1,0 +1,217 @@
+.confirmDetails {
+  position: relative;
+  margin-top: 25px;
+  margin: 0 auto;
+  padding: 10px 40px 0px;
+  line-height: 1rem;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+
+  @media only screen and (min-width: 1008px) {
+    padding: 70px 60px 0px;
+  }
+  @media only screen and (max-width: 1008px) {
+    padding: 70px 10px 0px;
+  }
+
+  .heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 35fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    border: 1.5px solid #E3E0DC;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 15px;
+
+    .info-div{
+      line-height: 1.4;
+    }
+  }
+  
+  .center {
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+  }
+  
+  .sub-heading {
+    font-weight: 600;
+  }
+  .label {
+    color: #383838;
+    margin-bottom: 3px;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+
+  .concern-label{
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    position: static;
+    height: 45px;
+    width: 30vw;
+    left: 0px;
+    top: 30px;
+    background: #F7F7FF;
+    border: 1px solid #AA66CC;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 5px 0px;
+    min-width: 300px;
+
+    @media only screen and (max-width: 768px) {
+      width:100%;
+    }
+  }
+  
+  
+  .form {
+    margin: 15px;
+
+    p{
+      color: #CB2F30;
+      font-weight: 600;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  
+  .emergency {
+    font-weight: 600;
+    margin: 10px;
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+  
+  .two-col-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    @media only screen and (max-width: 1008px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .yes-no-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 50px;
+
+    input[type=radio]{
+      margin-top: 0;
+      margin-bottom: 0;
+      cursor: pointer;
+    }
+
+    label{
+      margin-bottom: 0;
+      color: #383838;
+      margin-left: 5px;
+      font-weight: 600;
+    }
+  }
+  
+  .primary-concern-div{
+    input{
+      cursor: pointer;
+    }
+    label{
+      margin-left: 5px;
+    }
+  }
+  .continue-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 14px;
+    position: static;
+    left: 0px;
+    bottom: 0px;
+    font-weight: 600;
+    color: white;
+    background: #AA66CC;
+    border-radius: 26px;
+    margin-top: 25px;
+    margin-bottom: 70px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: #739;
+    }
+  }
+  input[type='radio']:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    top: -2px;
+    left: -4px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+
+  input[type='radio']:checked:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    top: -2px;
+    left: -4px;
+    position: relative;
+    background-color: #AA66CC;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+
+  input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+  }
+  input[type=checkbox]:after {
+    width: 15px;
+    height: 15px;
+    content: " ";
+    display: inline-block;
+    visibility: visible;
+  }
+  input[type=checkbox]:checked:after {
+    width: 15px;
+    height: 15px;
+    content: "\2714";
+    background-color: #AA66CC;
+    color: #ffffff;
+    border-radius: 3px;
+  }
+
+  .MuiCircularProgress-root {
+    height: 12px !important;
+    width: 12px !important;
+    margin-left: 10px;
+  }
+}

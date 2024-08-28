@@ -1,0 +1,91 @@
+.EventCard {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1rem 0;
+  .card.upcoming {
+    height: fit-content;
+  }
+  .card.past {
+    height: fit-content;
+  }
+
+  .card-img-top {
+    height: 25vh;
+  }
+
+  .card-body .eventCard__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .px-5 {
+    padding: 0.275rem 4rem !important;
+  }
+
+  @media only screen and (max-width: 300px) {
+    .px-5 {
+      padding: 0.375rem 3rem !important;
+    }
+  }
+
+  .card-title {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .summary {
+    font-size: 14px;
+  }
+
+  .imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #aa66cc;
+    padding: 9px;
+  }
+
+  .event__icons {
+    margin-left: -10px;
+  }
+
+  .event__icon {
+    margin: 0 10px;
+    height: 20px;
+  }
+
+  .event__rating {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    margin-left: 0;
+  }
+
+  .event__rating > img {
+    height: 20px;
+    margin: 0 3px;
+  }
+
+  .event__rating > p {
+    margin: 0;
+  }
+
+  .rating {
+    margin-left: 15px !important;
+    color: #fec60f;
+  }
+
+  .reviews {
+    font-size: 10px;
+    color: #b7b7b7;
+    margin: 5px;
+  }
+}

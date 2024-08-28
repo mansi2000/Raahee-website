@@ -1,0 +1,105 @@
+.EventFeedback {
+  .hf {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hf > textarea {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    outline: none;
+  }
+
+  .fa {
+    font-size: 10px;
+  }
+
+  .stars {
+    color: #f0932b;
+    margin-bottom: 20px;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 16.5%;
+    text-align: right;
+    margin-right: 4%;
+    margin-left: -9%;
+  }
+
+  .middle {
+    margin-top: 10px;
+    float: left;
+    width: 67.9%;
+  }
+
+  .side.right {
+    width: 4%;
+    margin-left: 10px;
+  }
+
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    height: 7px;
+    border-radius: 10px;
+  }
+
+  .overall__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rating {
+    color: #aa66cc;
+  }
+
+  .event__rating .fa.fa-star {
+    margin: 0 3px;
+    font-size: 14px;
+  }
+
+  .reviews {
+    font-size: 10px;
+    color: #999898;
+    margin: 5px;
+    margin-left: 0;
+  }
+
+  .send__review {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+  }
+
+  .send__review.events {
+    justify-content: space-between;
+  }
+
+  .landing-text {
+    font-family: "Poppins";
+    font-weight: 450 !important;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 20%;
+    //  left: 115px;
+    top: 195px;
+    border-radius: nullpx;
+  }
+}

@@ -1,0 +1,161 @@
+.TherapistsPage {
+    font-family: Poppins;
+    .tagline {
+        font-family: 'Sacramento', cursive;
+    }
+
+    .spinner {
+      animation: rotate 2s linear infinite;
+      position: relative;
+      left: 50%;
+      margin-bottom: 5rem;
+      width: 50px;
+      height: 50px;
+  
+  & .path {
+    stroke: rgb(0, 0, 0);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+  
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+    .therapist__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+        align-items: center;
+        .no-therapist {
+          height: 10rem;
+          font-size: 1.5rem;
+          font-style: italic;
+          display: flex;
+          align-items: center;
+          opacity: 0.9;
+        }
+    }
+    .therapist-img{
+        background-color:#aa66cc;
+    }
+    .btn-secondary {
+      border-color: #aa66cc !important;
+    }
+
+    .color-text{
+        color:#aa66cc; 
+    }
+
+    .landing-text{
+        font-family: 'Poppins';
+        font-weight: 450 !important;
+        font-size:45px;
+        line-height:60px;
+        letter-spacing:20%;
+      //  left: 115px;
+        top: 195px;
+        @media screen and (max-width: 990px) {
+          padding-top: 2rem;
+        }
+      }
+      .tagline {
+        font-family: 'Sacramento', cursive;
+      }
+    
+      @media (min-width: 768px) and (max-width: 990px) {
+        .tagline {
+          margin-top: 2em;
+        }
+    
+        .landing-text, .display-4{
+          font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 768px) and (min-width: 1300px) {
+      .tagline {
+          margin-top: 0em;
+          text-align: left;
+    
+        }
+    
+      .landing-text{
+        text-align:left;
+      }
+    }
+    .therapist-iconSection{
+      width:80%;
+      height:90%;
+      @media (max-width:992px) {
+        width:100%;
+        height:auto;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      #therapist-Logo{
+       display: none;
+      }
+      .filter {
+        margin-top: 1rem;
+      }
+    }
+  .therapist-iconSection {
+    svg {
+      margin-bottom: -4rem;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 601px) and (max-width: 767.98px) {
+      margin-top: -4rem;
+    }
+    .search-icon {
+      position: absolute;
+      margin-left: 0.7rem;
+      padding-bottom: 0.3rem;
+      height: 2rem;
+      width: 1.2rem;
+      opacity: 0.8;
+    }
+    .form-control {
+      border-radius: 0.5rem !important;
+      padding-left: 2.4rem !important;
+    }
+    .form-control::-webkit-input-placeholder {
+      font-size: 1.2rem;
+    }
+    input[type="search"] {
+      font-size: 1.2rem;
+    }
+    .search-form {
+      width: 85%;
+      position: relative;
+    }
+  }
+}

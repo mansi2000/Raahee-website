@@ -1,0 +1,52 @@
+footer {
+    margin-top: 0;
+    td {
+        font-weight: 400;
+    }
+    .nletter{
+        width: 100%;
+    }
+    .mycard{
+        padding-top: 1rem;
+        margin-left: 10px;
+    }
+    .btnClr{
+        background-color: white;
+        color: #1C2331;
+        height: 2.3rem;
+        font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+    .hclr{
+        color: grey;
+    }
+    .myform{
+        background-color: #1C2331;
+        border-color: white;
+        color: white;
+        height: 2.2rem;
+        border-radius: 5%;
+        margin-right: .5rem;
+        
+    }
+    ::placeholder { 
+        color: white;
+        opacity: 1; 
+    }
+
+    @media only screen and (max-width: 340px) {
+        .btnClr {
+            margin-top: 0.32rem;
+            width: 100%; 
+            display:block;
+        }
+    }
+
+    .footer-font-size{
+        font-size: 0.8rem !important;
+     }
+ 
+     .footer-font-weight{
+         font-weight:700 !important;
+     }
+}
+

@@ -1,0 +1,23 @@
+.AdminBlogPage {
+    min-height: 100vh;
+    padding: 110px 50px 0;
+    background-color: white;
+
+    .details {
+        margin: 10px auto 10px;
+        height: 55px;
+        padding: 10px;
+        // border-radius: 10px;
+        border: none;
+        border-bottom: 1px solid rgb(114, 108, 108);
+        
+        &:focus {
+            outline: none;
+            background-color: white;
+        }
+    }
+
+    .uploadButton {
+        margin: 10px auto 50px;
+    }
+}

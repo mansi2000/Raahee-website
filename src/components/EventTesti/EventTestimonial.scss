@@ -1,0 +1,46 @@
+.testimonial__card {
+    margin: 0.2rem;
+    .card__details{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        padding-bottom: 0;
+    }
+
+    .user__details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .user__rating .fa-star.checked {
+        color: #FEC60F;
+        margin-left: 10px;
+    }
+
+    .user__info {
+        padding: 10px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .user__info > h5 {
+        font-size: 15px;
+    }
+
+    .user__info > h6 {
+        font-size: 12px;
+    }
+
+    .user__rating {
+        margin: 0;
+        margin-top: -10px;
+    }
+
+    .card-body {
+        padding-top: 0;
+        margin: 0;
+    }
+}
